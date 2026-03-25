@@ -1,0 +1,18 @@
+=== Global\Valve_SteamIPC_Class (va=0x1800834a0) ===
+0x180001590: lea r8, [rip + 0x81f09]    ; ->0x1800834a0
+
+=== Global\Vale_SteamIPC_Class%u (va=0x1800834c0) ===
+0x1800013c6: lea r9, [rip + 0x820f3]    ; ->0x1800834c0
+
+=== https://update.aaasn.com/version (va=0x180084108) ===
+(no direct RIP-relative refs found)
+
+=== https://update.tnkjmec.com/version (va=0x180084130) ===
+(no direct RIP-relative refs found)
+
+=== http://update.wudrm.com/version (va=0x180084158) ===
+(no direct RIP-relative refs found)
+
+=== http://update.steamcdn.com/version (va=0x180084178) ===
+(no direct RIP-relative refs found)
+

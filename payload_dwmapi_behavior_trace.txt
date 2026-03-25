@@ -1,0 +1,507 @@
+File: payload_dwmapi.bin
+EntryPoint VA: 0x1800014a4
+
+== Top resolved imported calls ==
+  29  KERNEL32.dll!GetLastError
+   7  KERNEL32.dll!SetLastError
+   6  KERNEL32.dll!WriteFile
+   5  KERNEL32.dll!DeleteCriticalSection
+   5  KERNEL32.dll!SetFilePointerEx
+   4  KERNEL32.dll!IsProcessorFeaturePresent
+   4  KERNEL32.dll!RtlLookupFunctionEntry
+   4  KERNEL32.dll!LoadLibraryExW
+   4  KERNEL32.dll!FreeLibrary
+   4  KERNEL32.dll!ReadFile
+   4  KERNEL32.dll!EnterCriticalSection
+   4  KERNEL32.dll!LeaveCriticalSection
+   3  KERNEL32.dll!SetUnhandledExceptionFilter
+   3  KERNEL32.dll!UnhandledExceptionFilter
+   3  KERNEL32.dll!GetCurrentProcess
+   3  KERNEL32.dll!TerminateProcess
+   3  KERNEL32.dll!RtlCaptureContext
+   3  KERNEL32.dll!RtlVirtualUnwind
+   3  KERNEL32.dll!GetProcAddress
+   3  KERNEL32.dll!GetFileType
+   3  KERNEL32.dll!CloseHandle
+   3  KERNEL32.dll!VirtualProtect
+   3  KERNEL32.dll!CreateFileW
+   2  KERNEL32.dll!IsDebuggerPresent
+   2  KERNEL32.dll!RtlUnwindEx
+   2  KERNEL32.dll!RaiseException
+   2  KERNEL32.dll!GetConsoleMode
+   2  KERNEL32.dll!HeapAlloc
+   2  KERNEL32.dll!FindClose
+   2  KERNEL32.dll!GetCPInfo
+   2  KERNEL32.dll!FreeEnvironmentStringsW
+   2  KERNEL32.dll!SetStdHandle
+   1  KERNEL32.dll!GetSystemTimeAsFileTime
+   1  KERNEL32.dll!GetCurrentThreadId
+   1  KERNEL32.dll!GetCurrentProcessId
+   1  KERNEL32.dll!QueryPerformanceCounter
+   1  KERNEL32.dll!InitializeSListHead
+   1  KERNEL32.dll!InterlockedFlushSList
+   1  KERNEL32.dll!TlsAlloc
+   1  KERNEL32.dll!TlsFree
+   1  KERNEL32.dll!TlsGetValue
+   1  KERNEL32.dll!TlsSetValue
+   1  KERNEL32.dll!InitializeCriticalSectionAndSpinCount
+   1  KERNEL32.dll!EncodePointer
+   1  KERNEL32.dll!RtlPcToFileHeader
+   1  KERNEL32.dll!GetModuleHandleW
+   1  KERNEL32.dll!ExitProcess
+   1  KERNEL32.dll!GetModuleHandleExW
+   1  KERNEL32.dll!ReadConsoleW
+   1  KERNEL32.dll!GetStartupInfoW
+   1  KERNEL32.dll!GetStdHandle
+   1  KERNEL32.dll!HeapFree
+   1  KERNEL32.dll!GetConsoleOutputCP
+   1  KERNEL32.dll!GetFileSizeEx
+   1  KERNEL32.dll!FindFirstFileExW
+   1  KERNEL32.dll!FindNextFileW
+   1  KERNEL32.dll!GetModuleFileNameW
+   1  KERNEL32.dll!GetOEMCP
+   1  KERNEL32.dll!GetACP
+   1  KERNEL32.dll!IsValidCodePage
+   1  KERNEL32.dll!GetCommandLineA
+   1  KERNEL32.dll!GetCommandLineW
+   1  KERNEL32.dll!MultiByteToWideChar
+   1  KERNEL32.dll!WideCharToMultiByte
+   1  KERNEL32.dll!GetEnvironmentStringsW
+   1  KERNEL32.dll!FlsAlloc
+   1  KERNEL32.dll!FlsFree
+   1  KERNEL32.dll!FlsGetValue
+   1  KERNEL32.dll!FlsSetValue
+   1  KERNEL32.dll!InitializeCriticalSectionEx
+   1  KERNEL32.dll!LCMapStringW
+   1  KERNEL32.dll!GetProcessHeap
+   1  KERNEL32.dll!GetStringTypeW
+   1  KERNEL32.dll!FlushFileBuffers
+
+== Import call sites (first 250) ==
+0x1800014ef: call qword ptr [rip + 0x11b2b]      -> KERNEL32.dll!SetUnhandledExceptionFilter
+0x1800014f8: call qword ptr [rip + 0x11b1a]      -> KERNEL32.dll!UnhandledExceptionFilter
+0x1800014fe: call qword ptr [rip + 0x11b24]      -> KERNEL32.dll!GetCurrentProcess
+0x180001511: jmp qword ptr [rip + 0x11b18]      -> KERNEL32.dll!TerminateProcess
+0x180001526: call qword ptr [rip + 0x11b0c]      -> KERNEL32.dll!IsProcessorFeaturePresent
+0x1800015f7: call qword ptr [rip + 0x11a03]      -> KERNEL32.dll!RtlCaptureContext
+0x180001611: call qword ptr [rip + 0x119f1]      -> KERNEL32.dll!RtlLookupFunctionEntry
+0x18000164b: call qword ptr [rip + 0x119bf]      -> KERNEL32.dll!RtlVirtualUnwind
+0x18000168f: call qword ptr [rip + 0x119c3]      -> KERNEL32.dll!GetSystemTimeAsFileTime
+0x18000169d: call qword ptr [rip + 0x119ad]      -> KERNEL32.dll!GetCurrentThreadId
+0x1800016a9: call qword ptr [rip + 0x11999]      -> KERNEL32.dll!GetCurrentProcessId
+0x1800016b9: call qword ptr [rip + 0x11981]      -> KERNEL32.dll!QueryPerformanceCounter
+0x180001717: jmp qword ptr [rip + 0x11942]      -> KERNEL32.dll!InitializeSListHead
+0x180001aa4: call qword ptr [rip + 0x1158e]      -> KERNEL32.dll!IsProcessorFeaturePresent
+0x180001ad1: call qword ptr [rip + 0x11529]      -> KERNEL32.dll!RtlCaptureContext
+0x180001aeb: call qword ptr [rip + 0x11517]      -> KERNEL32.dll!RtlLookupFunctionEntry
+0x180001b2f: call qword ptr [rip + 0x114db]      -> KERNEL32.dll!RtlVirtualUnwind
+0x180001b83: call qword ptr [rip + 0x114df]      -> KERNEL32.dll!IsDebuggerPresent
+0x180001ba0: call qword ptr [rip + 0x1147a]      -> KERNEL32.dll!SetUnhandledExceptionFilter
+0x180001bab: call qword ptr [rip + 0x11467]      -> KERNEL32.dll!UnhandledExceptionFilter
+0x18000201c: call qword ptr [rip + 0x1105e]      -> KERNEL32.dll!RtlUnwindEx
+0x180002136: call qword ptr [rip + 0x10f4c]      -> KERNEL32.dll!InterlockedFlushSList
+0x180002464: call qword ptr [rip + 0x10c26]      -> KERNEL32.dll!GetLastError
+0x1800024eb: call qword ptr [rip + 0x10ba7]      -> KERNEL32.dll!SetLastError
+0x1800025e3: call qword ptr [rip + 0x10ac7]      -> KERNEL32.dll!DeleteCriticalSection
+0x1800027b4: call qword ptr [rip + 0x1084e]      -> KERNEL32.dll!RtlLookupFunctionEntry
+0x180002a4c: call qword ptr [rip + 0x1062e]      -> KERNEL32.dll!RtlUnwindEx
+0x180002c65: call qword ptr [rip + 0x10485]      -> KERNEL32.dll!LoadLibraryExW
+0x180002c73: call qword ptr [rip + 0x10417]      -> KERNEL32.dll!GetLastError
+0x180002c9d: call qword ptr [rip + 0x1044d]      -> KERNEL32.dll!LoadLibraryExW
+0x180002d0b: call qword ptr [rip + 0x103cf]      -> KERNEL32.dll!FreeLibrary
+0x180002d17: call qword ptr [rip + 0x103cb]      -> KERNEL32.dll!GetProcAddress
+0x180002d6e: jmp qword ptr [rip + 0x1034b]      -> KERNEL32.dll!TlsAlloc
+0x180002db7: jmp qword ptr [rip + 0x1031a]      -> KERNEL32.dll!TlsFree
+0x180002dff: jmp qword ptr [rip + 0x102c2]      -> KERNEL32.dll!TlsGetValue
+0x180002e48: call qword ptr [rip + 0x10282]      -> KERNEL32.dll!TlsSetValue
+0x180002ea7: call qword ptr [rip + 0x1020b]      -> KERNEL32.dll!InitializeCriticalSectionAndSpinCount
+0x1800038a7: call qword ptr [rip + 0xf84b]       -> KERNEL32.dll!EncodePointer
+0x180004031: call qword ptr [rip + 0xf0c9]       -> KERNEL32.dll!RaiseException
+0x1800046b8: call qword ptr [rip + 0xea4a]       -> KERNEL32.dll!RtlPcToFileHeader
+0x1800046f9: call qword ptr [rip + 0xea01]       -> KERNEL32.dll!RaiseException
+0x180004b1b: call qword ptr [rip + 0xe5ef]       -> KERNEL32.dll!ReadFile
+0x180004c3f: call qword ptr [rip + 0xe44b]       -> KERNEL32.dll!GetLastError
+0x180004c74: call qword ptr [rip + 0xe41e]       -> KERNEL32.dll!SetLastError
+0x180005ecb: call qword ptr [rip + 0xd1a7]       -> KERNEL32.dll!GetModuleHandleW
+0x180005f94: call qword ptr [rip + 0xd08e]       -> KERNEL32.dll!GetCurrentProcess
+0x180005f9f: call qword ptr [rip + 0xd08b]       -> KERNEL32.dll!TerminateProcess
+0x180005fae: call qword ptr [rip + 0xd164]       -> KERNEL32.dll!ExitProcess
+0x180005fdd: call qword ptr [rip + 0xd13d]       -> KERNEL32.dll!GetModuleHandleExW
+0x180005ff3: call qword ptr [rip + 0xd0ef]       -> KERNEL32.dll!GetProcAddress
+0x18000600f: call qword ptr [rip + 0xd0cb]       -> KERNEL32.dll!FreeLibrary
+0x180006a76: call qword ptr [rip + 0xc5bc]       -> KERNEL32.dll!IsProcessorFeaturePresent
+0x180006b90: call qword ptr [rip + 0xc4fa]       -> KERNEL32.dll!GetLastError
+0x180006bc5: call qword ptr [rip + 0xc4cd]       -> KERNEL32.dll!SetLastError
+0x180006bfc: call qword ptr [rip + 0xc48e]       -> KERNEL32.dll!GetLastError
+0x180006c0c: call qword ptr [rip + 0xc486]       -> KERNEL32.dll!SetLastError
+0x180006cb7: call qword ptr [rip + 0xc343]       -> KERNEL32.dll!RtlCaptureContext
+0x180006ccf: call qword ptr [rip + 0xc333]       -> KERNEL32.dll!RtlLookupFunctionEntry
+0x180006d0a: call qword ptr [rip + 0xc300]       -> KERNEL32.dll!RtlVirtualUnwind
+0x180006d43: call qword ptr [rip + 0xc31f]       -> KERNEL32.dll!IsDebuggerPresent
+0x180006d4d: call qword ptr [rip + 0xc2cd]       -> KERNEL32.dll!SetUnhandledExceptionFilter
+0x180006d58: call qword ptr [rip + 0xc2ba]       -> KERNEL32.dll!UnhandledExceptionFilter
+0x180006f21: call qword ptr [rip + 0xc111]       -> KERNEL32.dll!IsProcessorFeaturePresent
+0x180006f46: call qword ptr [rip + 0xc0dc]       -> KERNEL32.dll!GetCurrentProcess
+0x180006f58: jmp qword ptr [rip + 0xc0d1]       -> KERNEL32.dll!TerminateProcess
+0x1800070ed: call qword ptr [rip + 0xbfbd]       -> KERNEL32.dll!DeleteCriticalSection
+0x18000711c: jmp qword ptr [rip + 0xbf7d]       -> KERNEL32.dll!EnterCriticalSection
+0x180007128: jmp qword ptr [rip + 0xbf79]       -> KERNEL32.dll!LeaveCriticalSection
+0x18000744a: call qword ptr [rip + 0xbce0]       -> KERNEL32.dll!SetFilePointerEx
+0x180007454: call qword ptr [rip + 0xbc36]       -> KERNEL32.dll!GetLastError
+0x1800074e3: call qword ptr [rip + 0xbc47]       -> KERNEL32.dll!SetFilePointerEx
+0x1800074ed: call qword ptr [rip + 0xbb9d]       -> KERNEL32.dll!GetLastError
+0x18000751b: call qword ptr [rip + 0xbc0f]       -> KERNEL32.dll!SetFilePointerEx
+0x18000753e: call qword ptr [rip + 0xbbec]       -> KERNEL32.dll!SetFilePointerEx
+0x1800079db: call qword ptr [rip + 0xb6af]       -> KERNEL32.dll!GetLastError
+0x1800079fa: call qword ptr [rip + 0xb698]       -> KERNEL32.dll!SetLastError
+0x180007a68: call qword ptr [rip + 0xb62a]       -> KERNEL32.dll!SetLastError
+0x180007be5: call qword ptr [rip + 0xb4a5]       -> KERNEL32.dll!GetLastError
+0x180007c18: call qword ptr [rip + 0xb47a]       -> KERNEL32.dll!SetLastError
+0x180007e83: call qword ptr [rip + 0xb287]       -> KERNEL32.dll!ReadFile
+0x180008062: call qword ptr [rip + 0xb0a8]       -> KERNEL32.dll!ReadFile
+0x18000825f: call qword ptr [rip + 0xae2b]       -> KERNEL32.dll!GetLastError
+0x18000864b: call qword ptr [rip + 0xaae7]       -> KERNEL32.dll!GetConsoleMode
+0x180008680: call qword ptr [rip + 0xaaba]       -> KERNEL32.dll!ReadConsoleW
+0x18000868a: call qword ptr [rip + 0xaa00]       -> KERNEL32.dll!GetLastError
+0x1800086d9: call qword ptr [rip + 0xaa31]       -> KERNEL32.dll!ReadFile
+0x1800087db: call qword ptr [rip + 0xa8af]       -> KERNEL32.dll!GetLastError
+0x180008878: call qword ptr [rip + 0xa7f2]       -> KERNEL32.dll!GetStartupInfoW
+0x1800088e3: call qword ptr [rip + 0xa867]       -> KERNEL32.dll!GetFileType
+0x1800089c1: call qword ptr [rip + 0xa781]       -> KERNEL32.dll!GetStdHandle
+0x1800089d7: call qword ptr [rip + 0xa773]       -> KERNEL32.dll!GetFileType
+0x180009106: call qword ptr [rip + 0xa04c]       -> KERNEL32.dll!HeapFree
+0x180009110: call qword ptr [rip + 0x9f7a]       -> KERNEL32.dll!GetLastError
+0x18000938a: call qword ptr [rip + 0x9dd0]       -> KERNEL32.dll!CloseHandle
+0x180009394: call qword ptr [rip + 0x9cf6]       -> KERNEL32.dll!GetLastError
+0x1800097f7: call qword ptr [rip + 0x9973]       -> KERNEL32.dll!GetConsoleOutputCP
+0x180009ad4: call qword ptr [rip + 0x968e]       -> KERNEL32.dll!WriteFile
+0x180009b1a: call qword ptr [rip + 0x9648]       -> KERNEL32.dll!WriteFile
+0x180009bd9: call qword ptr [rip + 0x94b1]       -> KERNEL32.dll!GetLastError
+0x180009cc4: call qword ptr [rip + 0x949e]       -> KERNEL32.dll!WriteFile
+0x180009ce0: call qword ptr [rip + 0x93aa]       -> KERNEL32.dll!GetLastError
+0x180009de0: call qword ptr [rip + 0x9382]       -> KERNEL32.dll!WriteFile
+0x180009dfc: call qword ptr [rip + 0x928e]       -> KERNEL32.dll!GetLastError
+0x180009f48: call qword ptr [rip + 0x921a]       -> KERNEL32.dll!WriteFile
+0x180009f6d: call qword ptr [rip + 0x911d]       -> KERNEL32.dll!GetLastError
+0x18000a27a: call qword ptr [rip + 0x8eb8]       -> KERNEL32.dll!GetConsoleMode
+0x18000a30c: call qword ptr [rip + 0x8d7e]       -> KERNEL32.dll!GetLastError
+0x18000a3d2: call qword ptr [rip + 0x8d90]       -> KERNEL32.dll!WriteFile
+0x18000a3dc: call qword ptr [rip + 0x8cae]       -> KERNEL32.dll!GetLastError
+0x18000a5d3: call qword ptr [rip + 0x8b57]       -> KERNEL32.dll!SetFilePointerEx
+0x18000a5eb: call qword ptr [rip + 0x8b87]       -> KERNEL32.dll!GetFileSizeEx
+0x18000a9de: call qword ptr [rip + 0x879c]       -> KERNEL32.dll!HeapAlloc
+0x18000aa5a: jmp qword ptr [rip + 0x863f]       -> KERNEL32.dll!EnterCriticalSection
+0x18000aa83: call qword ptr [rip + 0x8627]       -> KERNEL32.dll!DeleteCriticalSection
+0x18000aaae: jmp qword ptr [rip + 0x85f3]       -> KERNEL32.dll!LeaveCriticalSection
+0x18000ab75: call qword ptr [rip + 0x8605]       -> KERNEL32.dll!HeapAlloc
+0x18000ac82: call qword ptr [rip + 0x8408]       -> KERNEL32.dll!GetLastError
+0x18000ae2a: call qword ptr [rip + 0x8260]       -> KERNEL32.dll!GetLastError
+0x18000b439: call qword ptr [rip + 0x7d51]       -> KERNEL32.dll!FindFirstFileExW
+0x18000b56f: call qword ptr [rip + 0x7c23]       -> KERNEL32.dll!FindNextFileW
+0x18000b5af: call qword ptr [rip + 0x7bd3]       -> KERNEL32.dll!FindClose
+0x18000b5db: call qword ptr [rip + 0x7ba7]       -> KERNEL32.dll!FindClose
+0x18000b75e: call qword ptr [rip + 0x792c]       -> KERNEL32.dll!GetLastError
+0x18000b813: call qword ptr [rip + 0x790f]       -> KERNEL32.dll!GetModuleFileNameW
+0x18000b81d: call qword ptr [rip + 0x786d]       -> KERNEL32.dll!GetLastError
+0x18000baf6: call qword ptr [rip + 0x76b4]       -> KERNEL32.dll!GetOEMCP
+0x18000bb0d: call qword ptr [rip + 0x7695]       -> KERNEL32.dll!GetACP
+0x18000bc34: call qword ptr [rip + 0x757e]       -> KERNEL32.dll!GetCPInfo
+0x18000c1fb: call qword ptr [rip + 0x6f9f]       -> KERNEL32.dll!IsValidCodePage
+0x18000c23f: call qword ptr [rip + 0x6f73]       -> KERNEL32.dll!GetCPInfo
+0x18000c4d4: call qword ptr [rip + 0x6ce6]       -> KERNEL32.dll!GetCommandLineA
+0x18000c4e1: call qword ptr [rip + 0x6ce1]       -> KERNEL32.dll!GetCommandLineW
+0x18000c549: jmp qword ptr [rip + 0x6c80]       -> KERNEL32.dll!MultiByteToWideChar
+0x18000c65f: jmp qword ptr [rip + 0x6b72]       -> KERNEL32.dll!WideCharToMultiByte
+0x18000c681: call qword ptr [rip + 0x6b59]       -> KERNEL32.dll!GetEnvironmentStringsW
+0x18000c6f6: call qword ptr [rip + 0x6aec]       -> KERNEL32.dll!FreeEnvironmentStringsW
+0x18000c752: call qword ptr [rip + 0x6a90]       -> KERNEL32.dll!FreeEnvironmentStringsW
+0x18000c895: call qword ptr [rip + 0x6855]       -> KERNEL32.dll!LoadLibraryExW
+0x18000c8a7: call qword ptr [rip + 0x67e3]       -> KERNEL32.dll!GetLastError
+0x18000c8e9: call qword ptr [rip + 0x6801]       -> KERNEL32.dll!LoadLibraryExW
+0x18000c945: call qword ptr [rip + 0x68cd]       -> KERNEL32.dll!VirtualProtect
+0x18000c976: call qword ptr [rip + 0x689c]       -> KERNEL32.dll!VirtualProtect
+0x18000c9ba: call qword ptr [rip + 0x6720]       -> KERNEL32.dll!FreeLibrary
+0x18000c9c6: call qword ptr [rip + 0x671c]       -> KERNEL32.dll!GetProcAddress
+0x18000ca84: jmp qword ptr [rip + 0x6765]       -> KERNEL32.dll!FlsAlloc
+0x18000ca8c: jmp qword ptr [rip + 0x6775]       -> KERNEL32.dll!FlsFree
+0x18000ca94: jmp qword ptr [rip + 0x675d]       -> KERNEL32.dll!FlsGetValue
+0x18000caa8: jmp qword ptr [rip + 0x6751]       -> KERNEL32.dll!FlsSetValue
+0x18000cab0: jmp qword ptr [rip + 0x6759]       -> KERNEL32.dll!InitializeCriticalSectionEx
+0x18000cb8f: call qword ptr [rip + 0x668b]       -> KERNEL32.dll!LCMapStringW
+0x18000cc30: call qword ptr [rip + 0x65e2]       -> KERNEL32.dll!VirtualProtect
+0x18000cca3: call qword ptr [rip + 0x6437]       -> KERNEL32.dll!FreeLibrary
+0x18000cce4: call qword ptr [rip + 0x653e]       -> KERNEL32.dll!GetProcessHeap
+0x18000d8b3: call qword ptr [rip + 0x57f7]       -> KERNEL32.dll!DeleteCriticalSection
+0x18000d9c5: call qword ptr [rip + 0x56e5]       -> KERNEL32.dll!DeleteCriticalSection
+0x18000dab4: jmp qword ptr [rip + 0x55e5]       -> KERNEL32.dll!EnterCriticalSection
+0x18000db37: call qword ptr [rip + 0x56f3]       -> KERNEL32.dll!SetStdHandle
+0x18000db9c: jmp qword ptr [rip + 0x5505]       -> KERNEL32.dll!LeaveCriticalSection
+0x18000dc49: call qword ptr [rip + 0x5451]       -> KERNEL32.dll!EnterCriticalSection
+0x18000dc58: call qword ptr [rip + 0x544a]       -> KERNEL32.dll!LeaveCriticalSection
+0x18000dd5e: call qword ptr [rip + 0x54cc]       -> KERNEL32.dll!SetStdHandle
+0x18000e60a: call qword ptr [rip + 0x4c28]       -> KERNEL32.dll!GetStringTypeW
+0x18000f1ee: call qword ptr [rip + 0x404c]       -> KERNEL32.dll!CreateFileW
+0x18000f24c: call qword ptr [rip + 0x3fee]       -> KERNEL32.dll!CreateFileW
+0x18000f27c: call qword ptr [rip + 0x3e0e]       -> KERNEL32.dll!GetLastError
+0x18000f294: call qword ptr [rip + 0x3eb6]       -> KERNEL32.dll!GetFileType
+0x18000f29e: call qword ptr [rip + 0x3dec]       -> KERNEL32.dll!GetLastError
+0x18000f2d1: call qword ptr [rip + 0x3e89]       -> KERNEL32.dll!CloseHandle
+0x18000f437: call qword ptr [rip + 0x3d23]       -> KERNEL32.dll!CloseHandle
+0x18000f46c: call qword ptr [rip + 0x3dce]       -> KERNEL32.dll!CreateFileW
+0x18000f47b: call qword ptr [rip + 0x3c0f]       -> KERNEL32.dll!GetLastError
+0x18000f53a: call qword ptr [rip + 0x3d08]       -> KERNEL32.dll!FlushFileBuffers
+0x18000f546: call qword ptr [rip + 0x3b44]       -> KERNEL32.dll!GetLastError
+
+== String reference sites (keyword-filtered, first 300) ==
+
+== Entry-point neighborhood disassembly ==
+0x18000144e: jne 0x18000148c
+0x180001450: mov r8, rsi
+0x180001453: mov edx, edi
+0x180001455: mov rcx, r14
+0x180001458: call 0x180001190
+0x18000145d: mov ebx, eax
+0x18000145f: mov dword ptr [rsp + 0x30], eax
+0x180001463: test eax, eax
+0x180001465: je 0x18000148c
+0x180001467: mov rax, qword ptr [rip + 0x11ec2]
+0x18000146e: test rax, rax
+0x180001471: jne 0x180001478
+0x180001473: lea ebx, [rax + 1]
+0x180001476: jmp 0x180001488
+0x180001478: mov r8, rsi
+0x18000147b: mov edx, edi
+0x18000147d: mov rcx, r14
+0x180001480: call qword ptr [rip + 0x11e02]
+0x180001486: mov ebx, eax
+0x180001488: mov dword ptr [rsp + 0x30], ebx
+0x18000148c: jmp 0x180001494
+0x18000148e: xor ebx, ebx
+0x180001490: mov dword ptr [rsp + 0x30], ebx
+0x180001494: mov eax, ebx
+0x180001496: mov rbx, qword ptr [rsp + 0x78]
+0x18000149b: add rsp, 0x40
+0x18000149f: pop r14
+0x1800014a1: pop rdi
+0x1800014a2: pop rsi
+0x1800014a3: ret 
+0x1800014a4: mov qword ptr [rsp + 8], rbx
+0x1800014a9: mov qword ptr [rsp + 0x10], rsi
+0x1800014ae: push rdi
+0x1800014af: sub rsp, 0x20
+0x1800014b3: mov rdi, r8
+0x1800014b6: mov ebx, edx
+0x1800014b8: mov rsi, rcx
+0x1800014bb: cmp edx, 1
+0x1800014be: jne 0x1800014c5
+0x1800014c0: call 0x180001660
+0x1800014c5: mov r8, rdi
+0x1800014c8: mov edx, ebx
+0x1800014ca: mov rcx, rsi
+0x1800014cd: mov rbx, qword ptr [rsp + 0x30]
+0x1800014d2: mov rsi, qword ptr [rsp + 0x38]
+0x1800014d7: add rsp, 0x20
+0x1800014db: pop rdi
+0x1800014dc: jmp 0x18000137c
+0x1800014e1: int3 
+0x1800014e2: int3 
+0x1800014e3: int3 
+0x1800014e4: push rbx
+0x1800014e6: sub rsp, 0x20
+0x1800014ea: mov rbx, rcx
+0x1800014ed: xor ecx, ecx
+0x1800014ef: call qword ptr [rip + 0x11b2b] ; KERNEL32.dll!SetUnhandledExceptionFilter
+0x1800014f5: mov rcx, rbx
+0x1800014f8: call qword ptr [rip + 0x11b1a] ; KERNEL32.dll!UnhandledExceptionFilter
+0x1800014fe: call qword ptr [rip + 0x11b24] ; KERNEL32.dll!GetCurrentProcess
+0x180001504: mov rcx, rax
+0x180001507: mov edx, 0xc0000409
+0x18000150c: add rsp, 0x20
+0x180001510: pop rbx
+0x180001511: jmp qword ptr [rip + 0x11b18] ; KERNEL32.dll!TerminateProcess
+0x180001518: mov qword ptr [rsp + 8], rcx
+0x18000151d: sub rsp, 0x38
+0x180001521: mov ecx, 0x17
+0x180001526: call qword ptr [rip + 0x11b0c] ; KERNEL32.dll!IsProcessorFeaturePresent
+0x18000152c: test eax, eax
+0x18000152e: je 0x180001537
+0x180001530: mov ecx, 2
+0x180001535: int 0x29
+0x180001537: lea rcx, [rip + 0x1c642]
+0x18000153e: call 0x1800015ec
+0x180001543: mov rax, qword ptr [rsp + 0x38]
+0x180001548: mov qword ptr [rip + 0x1c729], rax
+0x18000154f: lea rax, [rsp + 0x38]
+0x180001554: add rax, 8
+0x180001558: mov qword ptr [rip + 0x1c6b9], rax
+0x18000155f: mov rax, qword ptr [rip + 0x1c712]
+0x180001566: mov qword ptr [rip + 0x1c583], rax
+0x18000156d: mov rax, qword ptr [rsp + 0x40]
+0x180001572: mov qword ptr [rip + 0x1c687], rax
+0x180001579: mov dword ptr [rip + 0x1c55d], 0xc0000409
+0x180001583: mov dword ptr [rip + 0x1c557], 1
+0x18000158d: mov dword ptr [rip + 0x1c561], 1
+0x180001597: mov eax, 8
+0x18000159c: imul rax, rax, 0
+0x1800015a0: lea rcx, [rip + 0x1c559]
+0x1800015a7: mov qword ptr [rcx + rax], 2
+0x1800015af: mov eax, 8
+0x1800015b4: imul rax, rax, 0
+0x1800015b8: mov rcx, qword ptr [rip + 0x1ba41]
+0x1800015bf: mov qword ptr [rsp + rax + 0x20], rcx
+0x1800015c4: mov eax, 8
+0x1800015c9: imul rax, rax, 1
+0x1800015cd: mov rcx, qword ptr [rip + 0x1ba6c]
+0x1800015d4: mov qword ptr [rsp + rax + 0x20], rcx
+0x1800015d9: lea rcx, [rip + 0x11d58]
+0x1800015e0: call 0x1800014e4
+0x1800015e5: nop 
+0x1800015e6: add rsp, 0x38
+0x1800015ea: ret 
+0x1800015eb: int3 
+0x1800015ec: push rbx
+0x1800015ee: push rsi
+0x1800015ef: push rdi
+0x1800015f0: sub rsp, 0x40
+0x1800015f4: mov rbx, rcx
+0x1800015f7: call qword ptr [rip + 0x11a03] ; KERNEL32.dll!RtlCaptureContext
+0x1800015fd: mov rsi, qword ptr [rbx + 0xf8]
+0x180001604: xor edi, edi
+0x180001606: xor r8d, r8d
+0x180001609: lea rdx, [rsp + 0x60]
+0x18000160e: mov rcx, rsi
+0x180001611: call qword ptr [rip + 0x119f1] ; KERNEL32.dll!RtlLookupFunctionEntry
+0x180001617: test rax, rax
+0x18000161a: je 0x180001658
+0x18000161c: mov rdx, qword ptr [rsp + 0x60]
+0x180001621: lea rcx, [rsp + 0x68]
+0x180001626: mov qword ptr [rsp + 0x38], 0
+0x18000162f: mov r9, rax
+0x180001632: mov qword ptr [rsp + 0x30], rcx
+0x180001637: mov r8, rsi
+0x18000163a: lea rcx, [rsp + 0x70]
+0x18000163f: mov qword ptr [rsp + 0x28], rcx
+0x180001644: xor ecx, ecx
+0x180001646: mov qword ptr [rsp + 0x20], rbx
+0x18000164b: call qword ptr [rip + 0x119bf] ; KERNEL32.dll!RtlVirtualUnwind
+0x180001651: inc edi
+0x180001653: cmp edi, 2
+0x180001656: jl 0x180001606
+0x180001658: add rsp, 0x40
+0x18000165c: pop rdi
+0x18000165d: pop rsi
+0x18000165e: pop rbx
+0x18000165f: ret 
+0x180001660: mov qword ptr [rsp + 0x18], rbx
+0x180001665: push rbp
+0x180001666: mov rbp, rsp
+0x180001669: sub rsp, 0x30
+0x18000166d: mov rax, qword ptr [rip + 0x1b98c]
+0x180001674: movabs rbx, 0x2b992ddfa232
+0x18000167e: cmp rax, rbx
+0x180001681: jne 0x1800016fa
+0x180001683: lea rcx, [rbp + 0x10]
+0x180001687: mov qword ptr [rbp + 0x10], 0
+0x18000168f: call qword ptr [rip + 0x119c3] ; KERNEL32.dll!GetSystemTimeAsFileTime
+0x180001695: mov rax, qword ptr [rbp + 0x10]
+0x180001699: mov qword ptr [rbp - 0x10], rax
+0x18000169d: call qword ptr [rip + 0x119ad] ; KERNEL32.dll!GetCurrentThreadId
+0x1800016a3: mov eax, eax
+0x1800016a5: xor qword ptr [rbp - 0x10], rax
+0x1800016a9: call qword ptr [rip + 0x11999] ; KERNEL32.dll!GetCurrentProcessId
+0x1800016af: mov eax, eax
+0x1800016b1: lea rcx, [rbp + 0x18]
+0x1800016b5: xor qword ptr [rbp - 0x10], rax
+0x1800016b9: call qword ptr [rip + 0x11981] ; KERNEL32.dll!QueryPerformanceCounter
+0x1800016bf: mov eax, dword ptr [rbp + 0x18]
+0x1800016c2: lea rcx, [rbp - 0x10]
+0x1800016c6: shl rax, 0x20
+0x1800016ca: xor rax, qword ptr [rbp + 0x18]
+0x1800016ce: xor rax, qword ptr [rbp - 0x10]
+0x1800016d2: xor rax, rcx
+0x1800016d5: movabs rcx, 0xffffffffffff
+0x1800016df: and rax, rcx
+0x1800016e2: movabs rcx, 0x2b992ddfa233
+0x1800016ec: cmp rax, rbx
+0x1800016ef: cmove rax, rcx
+0x1800016f3: mov qword ptr [rip + 0x1b906], rax
+0x1800016fa: mov rbx, qword ptr [rsp + 0x50]
+0x1800016ff: not rax
+0x180001702: mov qword ptr [rip + 0x1b937], rax
+0x180001709: add rsp, 0x30
+0x18000170d: pop rbp
+0x18000170e: ret 
+0x18000170f: int3 
+0x180001710: lea rcx, [rip + 0x1c939]
+0x180001717: jmp qword ptr [rip + 0x11942] ; KERNEL32.dll!InitializeSListHead
+0x18000171e: int3 
+0x18000171f: int3 
+0x180001720: lea rcx, [rip + 0x1c929]
+0x180001727: jmp 0x180002130
+0x18000172c: lea rax, [rip + 0x1c92d]
+0x180001733: ret 
+0x180001734: lea rax, [rip + 0x1c92d]
+0x18000173b: ret 
+0x18000173c: sub rsp, 0x28
+0x180001740: call 0x18000172c
+0x180001745: or qword ptr [rax], 0x24
+0x180001749: call 0x180001734
+0x18000174e: or qword ptr [rax], 2
+0x180001752: add rsp, 0x28
+0x180001756: ret 
+0x180001757: int3 
+0x180001758: sub rsp, 0x28
+0x18000175c: call 0x180001ef0
+0x180001761: test eax, eax
+0x180001763: je 0x180001786
+0x180001765: mov rax, qword ptr gs:[0x30]
+0x18000176e: mov rcx, qword ptr [rax + 8]
+0x180001772: jmp 0x180001779
+0x180001774: cmp rcx, rax
+0x180001777: je 0x18000178d
+0x180001779: xor eax, eax
+0x18000177b: lock cmpxchg qword ptr [rip + 0x1c8f4], rcx
+0x180001784: jne 0x180001774
+0x180001786: xor al, al
+0x180001788: add rsp, 0x28
+0x18000178c: ret 
+0x18000178d: mov al, 1
+0x18000178f: jmp 0x180001788
+0x180001791: int3 
+0x180001792: int3 
+0x180001793: int3 
+0x180001794: sub rsp, 0x28
+0x180001798: call 0x180001ef0
+0x18000179d: test eax, eax
+0x18000179f: je 0x1800017a8
+0x1800017a1: call 0x180001c50
+0x1800017a6: jmp 0x1800017c1
+0x1800017a8: call 0x180001ee8
+0x1800017ad: mov ecx, eax
+0x1800017af: call 0x180006268
+0x1800017b4: test eax, eax
+0x1800017b6: je 0x1800017bc
+0x1800017b8: xor al, al
+0x1800017ba: jmp 0x1800017c3
+0x1800017bc: call 0x180006630
+0x1800017c1: mov al, 1
+0x1800017c3: add rsp, 0x28
+0x1800017c7: ret 
+0x1800017c8: sub rsp, 0x28
+0x1800017cc: xor ecx, ecx
+0x1800017ce: call 0x180001900
+0x1800017d3: test al, al
+0x1800017d5: setne al
+0x1800017d8: add rsp, 0x28
+0x1800017dc: ret 
+0x1800017dd: int3 
+0x1800017de: int3 
+0x1800017df: int3 
+0x1800017e0: sub rsp, 0x28
+0x1800017e4: call 0x180002184
+0x1800017e9: test al, al
+0x1800017eb: jne 0x1800017f1
+0x1800017ed: xor al, al
+0x1800017ef: jmp 0x180001803
+0x1800017f1: call 0x18000693c
+0x1800017f6: test al, al

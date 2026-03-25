@@ -1,0 +1,45 @@
+File: payload_dwmapi.bin
+Import thunks found: 19
+0x180001511 -> KERNEL32.dll!TerminateProcess
+0x180001717 -> KERNEL32.dll!InitializeSListHead
+0x180002d6e -> KERNEL32.dll!TlsAlloc
+0x180002db7 -> KERNEL32.dll!TlsFree
+0x180002dff -> KERNEL32.dll!TlsGetValue
+0x180006f58 -> KERNEL32.dll!TerminateProcess
+0x18000711c -> KERNEL32.dll!EnterCriticalSection
+0x180007128 -> KERNEL32.dll!LeaveCriticalSection
+0x18000aa5a -> KERNEL32.dll!EnterCriticalSection
+0x18000aaae -> KERNEL32.dll!LeaveCriticalSection
+0x18000c549 -> KERNEL32.dll!MultiByteToWideChar
+0x18000c65f -> KERNEL32.dll!WideCharToMultiByte
+0x18000ca84 -> KERNEL32.dll!FlsAlloc
+0x18000ca8c -> KERNEL32.dll!FlsFree
+0x18000ca94 -> KERNEL32.dll!FlsGetValue
+0x18000caa8 -> KERNEL32.dll!FlsSetValue
+0x18000cab0 -> KERNEL32.dll!InitializeCriticalSectionEx
+0x18000dab4 -> KERNEL32.dll!EnterCriticalSection
+0x18000db9c -> KERNEL32.dll!LeaveCriticalSection
+
+Calls to import thunks:
+   5 KERNEL32.dll!FlsSetValue
+   4 KERNEL32.dll!InitializeCriticalSectionEx
+   4 KERNEL32.dll!FlsGetValue
+   1 KERNEL32.dll!FlsAlloc
+   1 KERNEL32.dll!FlsFree
+
+Callsites:
+0x180007035: call 0x18000cab0 => KERNEL32.dll!InitializeCriticalSectionEx
+0x1800079ed: call 0x18000caa8 => KERNEL32.dll!FlsSetValue
+0x180007a23: call 0x18000caa8 => KERNEL32.dll!FlsSetValue
+0x180007a34: call 0x18000caa8 => KERNEL32.dll!FlsSetValue
+0x180007a45: call 0x18000caa8 => KERNEL32.dll!FlsSetValue
+0x180007b0a: call 0x18000ca94 => KERNEL32.dll!FlsGetValue
+0x180007b1f: call 0x18000caa8 => KERNEL32.dll!FlsSetValue
+0x180007b74: call 0x18000ca94 => KERNEL32.dll!FlsGetValue
+0x180007bfd: call 0x18000ca94 => KERNEL32.dll!FlsGetValue
+0x180007c54: call 0x18000ca94 => KERNEL32.dll!FlsGetValue
+0x180007c9e: call 0x18000ca84 => KERNEL32.dll!FlsAlloc
+0x180007cdb: call 0x18000ca8c => KERNEL32.dll!FlsFree
+0x180008d73: call 0x18000cab0 => KERNEL32.dll!InitializeCriticalSectionEx
+0x18000aa1f: call 0x18000cab0 => KERNEL32.dll!InitializeCriticalSectionEx
+0x18000d93b: call 0x18000cab0 => KERNEL32.dll!InitializeCriticalSectionEx

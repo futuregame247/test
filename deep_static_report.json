@@ -1,0 +1,2403 @@
+{
+  "payload_update.bin": {
+    "size": 673720,
+    "timestamp": 1773388585,
+    "entrypoint_rva": "0x440f4",
+    "imagebase": "0x180000000",
+    "subsystem": 2,
+    "dll_characteristics": "0x160",
+    "imports": [
+      {
+        "dll": "CRYPT32.dll",
+        "count": 13,
+        "functions": [
+          "CryptQueryObject",
+          "CertCreateCertificateChainEngine",
+          "CertGetNameStringA",
+          "CertGetCertificateChain",
+          "CertFreeCertificateChain",
+          "CertAddCertificateContextToStore",
+          "CryptStringToBinaryA",
+          "CertFreeCertificateContext",
+          "CertFindCertificateInStore",
+          "CertEnumCertificatesInStore",
+          "CertCloseStore",
+          "CertFreeCertificateChainEngine",
+          "CertOpenStore"
+        ]
+      },
+      {
+        "dll": "WS2_32.dll",
+        "count": 26,
+        "functions": [
+          "closesocket",
+          "recv",
+          "freeaddrinfo",
+          "getaddrinfo",
+          "ioctlsocket",
+          "listen",
+          "htonl",
+          "accept",
+          "select",
+          "__WSAFDIsSet",
+          "WSACleanup",
+          "WSAStartup",
+          "WSAIoctl",
+          "WSASetLastError",
+          "setsockopt",
+          "ntohs",
+          "htons",
+          "getsockopt",
+          "getsockname",
+          "getpeername",
+          "connect",
+          "bind",
+          "socket",
+          "inet_pton",
+          "WSAGetLastError",
+          "send"
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "count": 133,
+        "functions": [
+          "FreeEnvironmentStringsW",
+          "GetEnvironmentStringsW",
+          "GetCommandLineA",
+          "GetCPInfo",
+          "GetOEMCP",
+          "GetACP",
+          "IsValidCodePage",
+          "FindNextFileW",
+          "FindFirstFileExW",
+          "FindClose",
+          "FlushFileBuffers",
+          "SetStdHandle",
+          "GetFullPathNameW",
+          "GetFileAttributesExW",
+          "SetFilePointerEx",
+          "GetStdHandle",
+          "OpenEventA",
+          "GetCommandLineW",
+          "GetModuleFileNameW",
+          "WaitForSingleObject",
+          "GetSystemDirectoryW",
+          "GetLastError",
+          "CloseHandle",
+          "GetProcAddress",
+          "LocalFree",
+          "GetCurrentProcessId",
+          "GetModuleHandleW",
+          "FreeLibrary",
+          "CreateEventA",
+          "OutputDebugStringA",
+          "GetTickCount",
+          "CreateDirectoryW",
+          "GetCurrentProcess",
+          "TerminateProcess",
+          "GetEnvironmentVariableA",
+          "CreateFileW",
+          "GetFileAttributesW",
+          "MultiByteToWideChar",
+          "Sleep",
+          "DeleteFileW",
+          "GetSystemInfo",
+          "GetCurrentDirectoryW",
+          "MoveFileExW",
+          "GetFileSize",
+          "CreateProcessW",
+          "WideCharToMultiByte",
+          "MoveFileW",
+          "HeapCreate",
+          "HeapAlloc",
+          "HeapReAlloc",
+          "HeapFree",
+          "GetCurrentThreadId",
+          "OpenThread",
+          "SuspendThread",
+          "ResumeThread",
+          "GetThreadContext",
+          "SetThreadContext",
+          "FlushInstructionCache",
+          "VirtualProtect",
+          "CreateToolhelp32Snapshot",
+          "Thread32First",
+          "Thread32Next",
+          "VirtualAlloc",
+          "VirtualFree",
+          "VirtualQuery",
+          "SetLastError",
+          "FormatMessageA",
+          "SleepEx",
+          "VerSetConditionMask",
+          "QueryPerformanceFrequency",
+          "GetSystemDirectoryA",
+          "GetModuleHandleA",
+          "LoadLibraryA",
+          "VerifyVersionInfoA",
+          "QueryPerformanceCounter",
+          "ExpandEnvironmentStringsA",
+          "CreateFileA",
+          "GetFileSizeEx",
+          "GetStringTypeW",
+          "SetEndOfFile",
+          "GetTimeZoneInformation",
+          "HeapSize",
+          "WriteConsoleW",
+          "SetEnvironmentVariableW",
+          "ReadFile",
+          "LCMapStringW",
+          "CompareStringW",
+          "InitializeCriticalSectionEx",
+          "RtlCaptureContext",
+          "RtlLookupFunctionEntry",
+          "RtlVirtualUnwind",
+          "UnhandledExceptionFilter",
+          "SetUnhandledExceptionFilter",
+          "IsProcessorFeaturePresent",
+          "GetSystemTimeAsFileTime",
+          "InitializeSListHead",
+          "IsDebuggerPresent",
+          "GetStartupInfoW",
+          "GetProcessHeap",
+          "GetNativeSystemInfo",
+          "IsBadReadPtr",
+          "RtlUnwindEx",
+          "InterlockedFlushSList",
+          "EnterCriticalSection",
+          "LeaveCriticalSection",
+          "DeleteCriticalSection",
+          "InitializeCriticalSectionAndSpinCount",
+          "TlsAlloc",
+          "TlsGetValue",
+          "TlsSetValue",
+          "TlsFree",
+          "LoadLibraryExW",
+          "EncodePointer",
+          "RaiseException",
+          "RtlPcToFileHeader",
+          "GetDriveTypeW",
+          "GetFileInformationByHandle",
+          "GetFileType",
+          "PeekNamedPipe",
+          "SystemTimeToTzSpecificLocalTime",
+          "FileTimeToSystemTime",
+          "ExitProcess",
+          "GetModuleHandleExW",
+          "GetConsoleMode",
+          "ReadConsoleW",
+          "WriteFile",
+          "GetConsoleOutputCP",
+          "GetTempPathW",
+          "FlsAlloc",
+          "FlsGetValue",
+          "FlsSetValue",
+          "FlsFree",
+          "RtlUnwind"
+        ]
+      },
+      {
+        "dll": "ADVAPI32.dll",
+        "count": 7,
+        "functions": [
+          "CryptReleaseContext",
+          "CryptGetHashParam",
+          "CryptGenRandom",
+          "CryptCreateHash",
+          "CryptHashData",
+          "CryptDestroyHash",
+          "CryptAcquireContextA"
+        ]
+      },
+      {
+        "dll": "SHELL32.dll",
+        "count": 3,
+        "functions": [
+          "SHGetKnownFolderPath",
+          "SHGetFolderPathW",
+          "CommandLineToArgvW"
+        ]
+      },
+      {
+        "dll": "ole32.dll",
+        "count": 1,
+        "functions": [
+          "CoTaskMemFree"
+        ]
+      }
+    ],
+    "exports_count": 78,
+    "exports_sample": [
+      "cJSON_AddArrayToObject",
+      "cJSON_AddBoolToObject",
+      "cJSON_AddFalseToObject",
+      "cJSON_AddItemReferenceToArray",
+      "cJSON_AddItemReferenceToObject",
+      "cJSON_AddItemToArray",
+      "cJSON_AddItemToObject",
+      "cJSON_AddItemToObjectCS",
+      "cJSON_AddNullToObject",
+      "cJSON_AddNumberToObject",
+      "cJSON_AddObjectToObject",
+      "cJSON_AddRawToObject",
+      "cJSON_AddStringToObject",
+      "cJSON_AddTrueToObject",
+      "cJSON_Compare",
+      "cJSON_CreateArray",
+      "cJSON_CreateArrayReference",
+      "cJSON_CreateBool",
+      "cJSON_CreateDoubleArray",
+      "cJSON_CreateFalse",
+      "cJSON_CreateFloatArray",
+      "cJSON_CreateIntArray",
+      "cJSON_CreateNull",
+      "cJSON_CreateNumber",
+      "cJSON_CreateObject",
+      "cJSON_CreateObjectReference",
+      "cJSON_CreateRaw",
+      "cJSON_CreateString",
+      "cJSON_CreateStringArray",
+      "cJSON_CreateStringReference",
+      "cJSON_CreateTrue",
+      "cJSON_Delete",
+      "cJSON_DeleteItemFromArray",
+      "cJSON_DeleteItemFromObject",
+      "cJSON_DeleteItemFromObjectCaseSensitive",
+      "cJSON_DetachItemFromArray",
+      "cJSON_DetachItemFromObject",
+      "cJSON_DetachItemFromObjectCaseSensitive",
+      "cJSON_DetachItemViaPointer",
+      "cJSON_Duplicate",
+      "cJSON_GetArrayItem",
+      "cJSON_GetArraySize",
+      "cJSON_GetErrorPtr",
+      "cJSON_GetNumberValue",
+      "cJSON_GetObjectItem",
+      "cJSON_GetObjectItemCaseSensitive",
+      "cJSON_GetStringValue",
+      "cJSON_HasObjectItem",
+      "cJSON_InitHooks",
+      "cJSON_InsertItemInArray",
+      "cJSON_IsArray",
+      "cJSON_IsBool",
+      "cJSON_IsFalse",
+      "cJSON_IsInvalid",
+      "cJSON_IsNull",
+      "cJSON_IsNumber",
+      "cJSON_IsObject",
+      "cJSON_IsRaw",
+      "cJSON_IsString",
+      "cJSON_IsTrue",
+      "cJSON_Minify",
+      "cJSON_Parse",
+      "cJSON_ParseWithLength",
+      "cJSON_ParseWithLengthOpts",
+      "cJSON_ParseWithOpts",
+      "cJSON_Print",
+      "cJSON_PrintBuffered",
+      "cJSON_PrintPreallocated",
+      "cJSON_PrintUnformatted",
+      "cJSON_ReplaceItemInArray",
+      "cJSON_ReplaceItemInObject",
+      "cJSON_ReplaceItemInObjectCaseSensitive",
+      "cJSON_ReplaceItemViaPointer",
+      "cJSON_SetNumberHelper",
+      "cJSON_SetValuestring",
+      "cJSON_Version",
+      "cJSON_free",
+      "cJSON_malloc"
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "vsize": 443888,
+        "raw_size": 443904,
+        "entropy": 6.4495,
+        "chars": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "vsize": 121648,
+        "raw_size": 121856,
+        "entropy": 5.787,
+        "chars": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "vsize": 84080,
+        "raw_size": 70144,
+        "entropy": 0.2346,
+        "chars": "0xc0000040"
+      },
+      {
+        "name": ".pdata",
+        "vsize": 19416,
+        "raw_size": 19456,
+        "entropy": 5.8123,
+        "chars": "0x40000040"
+      },
+      {
+        "name": ".fptable",
+        "vsize": 256,
+        "raw_size": 512,
+        "entropy": -0.0,
+        "chars": "0xc0000040"
+      },
+      {
+        "name": ".rsrc",
+        "vsize": 920,
+        "raw_size": 1024,
+        "entropy": 3.4026,
+        "chars": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "vsize": 2524,
+        "raw_size": 2560,
+        "entropy": 5.353,
+        "chars": "0x42000040"
+      }
+    ],
+    "urls": [
+      "!http://ocsp.globalsign.com/rootr103",
+      "!http://ocsp.globalsign.com/rootr30;",
+      "\"http://crl.globalsign.com/root.crl0G",
+      "# https://curl.haxx.se/docs/http-cookies.html",
+      "%http://crl.globalsign.com/root-r3.crl0G",
+      "&https://www.globalsign.com/repository/0",
+      "-http://ocsp.globalsign.com/codesigningrootr450F",
+      "/http://secure.globalsign.com/cacert/root-r3.crt06",
+      "0http://crl.globalsign.com/codesigningrootr45.crl0U",
+      "2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 ",
+      "3http://ocsp.globalsign.com/gsgccr45evcodesignca20200U",
+      "4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0",
+      "5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C",
+      "6http://crl.globalsign.com/gsgccr45evcodesignca2020.crl0",
+      "7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E",
+      ":http://secure.globalsign.com/cacert/codesigningrootr45.crt0A",
+      "@http://secure.globalsign.com/cacert/gsgccr45evcodesignca2020.crt0?",
+      "Nhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0 ",
+      "Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_",
+      "http://",
+      "http://ocsp.digicert.com0A",
+      "http://ocsp.digicert.com0C",
+      "http://ocsp.digicert.com0]",
+      "http://update.steamcdn.com/version",
+      "http://update.wudrm.com/version",
+      "https://",
+      "https://update.aaasn.com/version",
+      "https://update.tnkjmec.com/version"
+    ],
+    "domains_sample": [
+      "ADVAPI32.dll",
+      "CRYPT32.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "cacerts.digicert.com",
+      "crl.globalsign.com",
+      "crl3.digicert.com",
+      "curl.haxx.se",
+      "example.com",
+      "http-cookies.html",
+      "iphlpapi.dll",
+      "ocsp.digicert",
+      "ocsp.globalsign.com",
+      "ole32.dll",
+      "s.netrc",
+      "secur32.dll",
+      "secure.globalsign.com",
+      "security.dll",
+      "update.aaasn.com",
+      "update.dll",
+      "update.pdb",
+      "update.steamcdn.com",
+      "update.tnkjmec.com",
+      "update.wudrm.com",
+      "www.digicert",
+      "www.globalsign.com"
+    ],
+    "used_import_calls_top": [
+      [
+        "KERNEL32.dll!GetModuleHandleW",
+        3
+      ],
+      [
+        "KERNEL32.dll!CloseHandle",
+        3
+      ],
+      [
+        "KERNEL32.dll!GetCurrentProcessId",
+        2
+      ],
+      [
+        "KERNEL32.dll!LocalFree",
+        2
+      ],
+      [
+        "KERNEL32.dll!GetTickCount",
+        2
+      ],
+      [
+        "KERNEL32.dll!GetModuleFileNameW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetSystemDirectoryW",
+        1
+      ],
+      [
+        "KERNEL32.dll!CreateEventA",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetLastError",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetCommandLineW",
+        1
+      ],
+      [
+        "SHELL32.dll!CommandLineToArgvW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetProcAddress",
+        1
+      ],
+      [
+        "KERNEL32.dll!OpenEventA",
+        1
+      ],
+      [
+        "KERNEL32.dll!WaitForSingleObject",
+        1
+      ],
+      [
+        "KERNEL32.dll!OutputDebugStringA",
+        1
+      ]
+    ],
+    "used_import_calls_count": 15,
+    "used_import_evidence_sample": [
+      {
+        "insn_va": "0x180001349",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cdf1]",
+        "resolved_import": "KERNEL32.dll!GetModuleFileNameW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001382",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cdc8]",
+        "resolved_import": "KERNEL32.dll!GetSystemDirectoryW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800013c0",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cdb2]",
+        "resolved_import": "KERNEL32.dll!GetCurrentProcessId",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800013f8",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cd92]",
+        "resolved_import": "KERNEL32.dll!CreateEventA",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000140e",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cd44]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001440",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cd3a]",
+        "resolved_import": "KERNEL32.dll!GetModuleHandleW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000146a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cd10]",
+        "resolved_import": "KERNEL32.dll!GetModuleHandleW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001486",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6ccac]",
+        "resolved_import": "KERNEL32.dll!GetCommandLineW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001494",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6d056]",
+        "resolved_import": "SHELL32.dll!CommandLineToArgvW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001504",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cc66]",
+        "resolved_import": "KERNEL32.dll!LocalFree",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000152b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cc4f]",
+        "resolved_import": "KERNEL32.dll!GetModuleHandleW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001544",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cc1e]",
+        "resolved_import": "KERNEL32.dll!GetProcAddress",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000158a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cbe0]",
+        "resolved_import": "KERNEL32.dll!LocalFree",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000159e",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cb8c]",
+        "resolved_import": "KERNEL32.dll!OpenEventA",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800015b8",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cb8a]",
+        "resolved_import": "KERNEL32.dll!WaitForSingleObject",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800015c1",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cb99]",
+        "resolved_import": "KERNEL32.dll!CloseHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800015e7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cb73]",
+        "resolved_import": "KERNEL32.dll!CloseHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001635",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6cb25]",
+        "resolved_import": "KERNEL32.dll!CloseHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800016dc",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6ca96]",
+        "resolved_import": "KERNEL32.dll!GetCurrentProcessId",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000184a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6c948]",
+        "resolved_import": "KERNEL32.dll!OutputDebugStringA",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800020ff",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6c09b]",
+        "resolved_import": "KERNEL32.dll!GetTickCount",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002112",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6c088]",
+        "resolved_import": "KERNEL32.dll!GetTickCount",
+        "target_section": ".rdata"
+      }
+    ],
+    "behavior_categories": {
+      "dll_loading": [
+        [
+          "KERNEL32.dll!GetProcAddress",
+          1
+        ]
+      ],
+      "process": [
+        [
+          "KERNEL32.dll!WaitForSingleObject",
+          1
+        ]
+      ]
+    }
+  },
+  "payload_dwmapi.bin": {
+    "size": 136120,
+    "timestamp": 1773564078,
+    "entrypoint_rva": "0x14a4",
+    "imagebase": "0x180000000",
+    "subsystem": 2,
+    "dll_characteristics": "0x160",
+    "imports": [
+      {
+        "dll": "KERNEL32.dll",
+        "count": 78,
+        "functions": [
+          "RtlCaptureContext",
+          "RtlLookupFunctionEntry",
+          "RtlVirtualUnwind",
+          "UnhandledExceptionFilter",
+          "SetUnhandledExceptionFilter",
+          "GetCurrentProcess",
+          "TerminateProcess",
+          "IsProcessorFeaturePresent",
+          "QueryPerformanceCounter",
+          "GetCurrentProcessId",
+          "GetCurrentThreadId",
+          "GetSystemTimeAsFileTime",
+          "InitializeSListHead",
+          "IsDebuggerPresent",
+          "GetStartupInfoW",
+          "GetModuleHandleW",
+          "RtlUnwindEx",
+          "InterlockedFlushSList",
+          "GetLastError",
+          "SetLastError",
+          "EnterCriticalSection",
+          "LeaveCriticalSection",
+          "DeleteCriticalSection",
+          "InitializeCriticalSectionAndSpinCount",
+          "TlsAlloc",
+          "TlsGetValue",
+          "TlsSetValue",
+          "TlsFree",
+          "FreeLibrary",
+          "GetProcAddress",
+          "LoadLibraryExW",
+          "EncodePointer",
+          "RaiseException",
+          "RtlPcToFileHeader",
+          "ReadFile",
+          "ExitProcess",
+          "GetModuleHandleExW",
+          "GetModuleFileNameW",
+          "SetFilePointerEx",
+          "GetConsoleMode",
+          "ReadConsoleW",
+          "GetStdHandle",
+          "GetFileType",
+          "HeapFree",
+          "CloseHandle",
+          "WriteFile",
+          "GetConsoleOutputCP",
+          "GetFileSizeEx",
+          "HeapAlloc",
+          "FindClose",
+          "FindFirstFileExW",
+          "FindNextFileW",
+          "IsValidCodePage",
+          "GetACP",
+          "GetOEMCP",
+          "GetCPInfo",
+          "GetCommandLineA",
+          "GetCommandLineW",
+          "MultiByteToWideChar",
+          "WideCharToMultiByte",
+          "GetEnvironmentStringsW",
+          "FreeEnvironmentStringsW",
+          "FlsAlloc",
+          "FlsGetValue",
+          "FlsSetValue",
+          "FlsFree",
+          "InitializeCriticalSectionEx",
+          "VirtualProtect",
+          "LCMapStringW",
+          "GetProcessHeap",
+          "SetStdHandle",
+          "GetStringTypeW",
+          "CreateFileW",
+          "FlushFileBuffers",
+          "HeapSize",
+          "HeapReAlloc",
+          "SetEndOfFile",
+          "WriteConsoleW"
+        ]
+      }
+    ],
+    "exports_count": 0,
+    "exports_sample": [],
+    "sections": [
+      {
+        "name": ".text",
+        "vsize": 69760,
+        "raw_size": 70144,
+        "entropy": 6.4435,
+        "chars": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "vsize": 40234,
+        "raw_size": 40448,
+        "entropy": 4.7427,
+        "chars": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "vsize": 7024,
+        "raw_size": 3072,
+        "entropy": 1.9303,
+        "chars": "0xc0000040"
+      },
+      {
+        "name": ".pdata",
+        "vsize": 4680,
+        "raw_size": 5120,
+        "entropy": 4.6965,
+        "chars": "0x40000040"
+      },
+      {
+        "name": ".fptable",
+        "vsize": 256,
+        "raw_size": 512,
+        "entropy": -0.0,
+        "chars": "0xc0000040"
+      },
+      {
+        "name": ".rsrc",
+        "vsize": 248,
+        "raw_size": 512,
+        "entropy": 2.5198,
+        "chars": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "vsize": 1624,
+        "raw_size": 2048,
+        "entropy": 4.8751,
+        "chars": "0x42000040"
+      }
+    ],
+    "urls": [
+      "!http://ocsp.globalsign.com/rootr103",
+      "!http://ocsp.globalsign.com/rootr30;",
+      "\"http://crl.globalsign.com/root.crl0G",
+      "%http://crl.globalsign.com/root-r3.crl0G",
+      "&https://www.globalsign.com/repository/0",
+      "-http://ocsp.globalsign.com/codesigningrootr450F",
+      "/http://secure.globalsign.com/cacert/root-r3.crt06",
+      "0http://crl.globalsign.com/codesigningrootr45.crl0U",
+      "2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 ",
+      "3http://ocsp.globalsign.com/gsgccr45evcodesignca20200U",
+      "4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0",
+      "5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C",
+      "6http://crl.globalsign.com/gsgccr45evcodesignca2020.crl0",
+      "7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E",
+      ":http://secure.globalsign.com/cacert/codesigningrootr45.crt0A",
+      "@http://secure.globalsign.com/cacert/gsgccr45evcodesignca2020.crt0?",
+      "Nhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0 ",
+      "Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_",
+      "http://ocsp.digicert.com0A",
+      "http://ocsp.digicert.com0C",
+      "http://ocsp.digicert.com0]"
+    ],
+    "domains_sample": [
+      "KERNEL32.dll",
+      "cacerts.digicert.com",
+      "crl.globalsign.com",
+      "crl3.digicert.com",
+      "dwmapi.pdb",
+      "ocsp.digicert",
+      "ocsp.globalsign.com",
+      "packageinfo.vdf",
+      "secure.globalsign.com",
+      "www.digicert",
+      "www.globalsign.com"
+    ],
+    "used_import_calls_top": [
+      [
+        "KERNEL32.dll!GetLastError",
+        29
+      ],
+      [
+        "KERNEL32.dll!SetLastError",
+        7
+      ],
+      [
+        "KERNEL32.dll!WriteFile",
+        6
+      ],
+      [
+        "KERNEL32.dll!DeleteCriticalSection",
+        5
+      ],
+      [
+        "KERNEL32.dll!SetFilePointerEx",
+        5
+      ],
+      [
+        "KERNEL32.dll!IsProcessorFeaturePresent",
+        4
+      ],
+      [
+        "KERNEL32.dll!RtlLookupFunctionEntry",
+        4
+      ],
+      [
+        "KERNEL32.dll!LoadLibraryExW",
+        4
+      ],
+      [
+        "KERNEL32.dll!FreeLibrary",
+        4
+      ],
+      [
+        "KERNEL32.dll!ReadFile",
+        4
+      ],
+      [
+        "KERNEL32.dll!EnterCriticalSection",
+        4
+      ],
+      [
+        "KERNEL32.dll!LeaveCriticalSection",
+        4
+      ],
+      [
+        "KERNEL32.dll!SetUnhandledExceptionFilter",
+        3
+      ],
+      [
+        "KERNEL32.dll!UnhandledExceptionFilter",
+        3
+      ],
+      [
+        "KERNEL32.dll!GetCurrentProcess",
+        3
+      ],
+      [
+        "KERNEL32.dll!TerminateProcess",
+        3
+      ],
+      [
+        "KERNEL32.dll!RtlCaptureContext",
+        3
+      ],
+      [
+        "KERNEL32.dll!RtlVirtualUnwind",
+        3
+      ],
+      [
+        "KERNEL32.dll!GetProcAddress",
+        3
+      ],
+      [
+        "KERNEL32.dll!GetFileType",
+        3
+      ],
+      [
+        "KERNEL32.dll!CloseHandle",
+        3
+      ],
+      [
+        "KERNEL32.dll!VirtualProtect",
+        3
+      ],
+      [
+        "KERNEL32.dll!CreateFileW",
+        3
+      ],
+      [
+        "KERNEL32.dll!IsDebuggerPresent",
+        2
+      ],
+      [
+        "KERNEL32.dll!RtlUnwindEx",
+        2
+      ],
+      [
+        "KERNEL32.dll!RaiseException",
+        2
+      ],
+      [
+        "KERNEL32.dll!GetConsoleMode",
+        2
+      ],
+      [
+        "KERNEL32.dll!HeapAlloc",
+        2
+      ],
+      [
+        "KERNEL32.dll!FindClose",
+        2
+      ],
+      [
+        "KERNEL32.dll!GetCPInfo",
+        2
+      ],
+      [
+        "KERNEL32.dll!FreeEnvironmentStringsW",
+        2
+      ],
+      [
+        "KERNEL32.dll!SetStdHandle",
+        2
+      ],
+      [
+        "KERNEL32.dll!GetSystemTimeAsFileTime",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetCurrentThreadId",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetCurrentProcessId",
+        1
+      ],
+      [
+        "KERNEL32.dll!QueryPerformanceCounter",
+        1
+      ],
+      [
+        "KERNEL32.dll!InitializeSListHead",
+        1
+      ],
+      [
+        "KERNEL32.dll!InterlockedFlushSList",
+        1
+      ],
+      [
+        "KERNEL32.dll!TlsAlloc",
+        1
+      ],
+      [
+        "KERNEL32.dll!TlsFree",
+        1
+      ],
+      [
+        "KERNEL32.dll!TlsGetValue",
+        1
+      ],
+      [
+        "KERNEL32.dll!TlsSetValue",
+        1
+      ],
+      [
+        "KERNEL32.dll!InitializeCriticalSectionAndSpinCount",
+        1
+      ],
+      [
+        "KERNEL32.dll!EncodePointer",
+        1
+      ],
+      [
+        "KERNEL32.dll!RtlPcToFileHeader",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetModuleHandleW",
+        1
+      ],
+      [
+        "KERNEL32.dll!ExitProcess",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetModuleHandleExW",
+        1
+      ],
+      [
+        "KERNEL32.dll!ReadConsoleW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetStartupInfoW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetStdHandle",
+        1
+      ],
+      [
+        "KERNEL32.dll!HeapFree",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetConsoleOutputCP",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetFileSizeEx",
+        1
+      ],
+      [
+        "KERNEL32.dll!FindFirstFileExW",
+        1
+      ],
+      [
+        "KERNEL32.dll!FindNextFileW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetModuleFileNameW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetOEMCP",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetACP",
+        1
+      ],
+      [
+        "KERNEL32.dll!IsValidCodePage",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetCommandLineA",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetCommandLineW",
+        1
+      ],
+      [
+        "KERNEL32.dll!MultiByteToWideChar",
+        1
+      ],
+      [
+        "KERNEL32.dll!WideCharToMultiByte",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetEnvironmentStringsW",
+        1
+      ],
+      [
+        "KERNEL32.dll!FlsAlloc",
+        1
+      ],
+      [
+        "KERNEL32.dll!FlsFree",
+        1
+      ],
+      [
+        "KERNEL32.dll!FlsGetValue",
+        1
+      ],
+      [
+        "KERNEL32.dll!FlsSetValue",
+        1
+      ],
+      [
+        "KERNEL32.dll!InitializeCriticalSectionEx",
+        1
+      ],
+      [
+        "KERNEL32.dll!LCMapStringW",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetProcessHeap",
+        1
+      ],
+      [
+        "KERNEL32.dll!GetStringTypeW",
+        1
+      ],
+      [
+        "KERNEL32.dll!FlushFileBuffers",
+        1
+      ]
+    ],
+    "used_import_calls_count": 74,
+    "used_import_evidence_sample": [
+      {
+        "insn_va": "0x1800014ef",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11b2b]",
+        "resolved_import": "KERNEL32.dll!SetUnhandledExceptionFilter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800014f8",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11b1a]",
+        "resolved_import": "KERNEL32.dll!UnhandledExceptionFilter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800014fe",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11b24]",
+        "resolved_import": "KERNEL32.dll!GetCurrentProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001511",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x11b18]",
+        "resolved_import": "KERNEL32.dll!TerminateProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001526",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11b0c]",
+        "resolved_import": "KERNEL32.dll!IsProcessorFeaturePresent",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800015f7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11a03]",
+        "resolved_import": "KERNEL32.dll!RtlCaptureContext",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001611",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x119f1]",
+        "resolved_import": "KERNEL32.dll!RtlLookupFunctionEntry",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000164b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x119bf]",
+        "resolved_import": "KERNEL32.dll!RtlVirtualUnwind",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000168f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x119c3]",
+        "resolved_import": "KERNEL32.dll!GetSystemTimeAsFileTime",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000169d",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x119ad]",
+        "resolved_import": "KERNEL32.dll!GetCurrentThreadId",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800016a9",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11999]",
+        "resolved_import": "KERNEL32.dll!GetCurrentProcessId",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800016b9",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11981]",
+        "resolved_import": "KERNEL32.dll!QueryPerformanceCounter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001717",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x11942]",
+        "resolved_import": "KERNEL32.dll!InitializeSListHead",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001aa4",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1158e]",
+        "resolved_import": "KERNEL32.dll!IsProcessorFeaturePresent",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001ad1",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11529]",
+        "resolved_import": "KERNEL32.dll!RtlCaptureContext",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001aeb",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11517]",
+        "resolved_import": "KERNEL32.dll!RtlLookupFunctionEntry",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001b2f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x114db]",
+        "resolved_import": "KERNEL32.dll!RtlVirtualUnwind",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001b83",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x114df]",
+        "resolved_import": "KERNEL32.dll!IsDebuggerPresent",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001ba0",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1147a]",
+        "resolved_import": "KERNEL32.dll!SetUnhandledExceptionFilter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180001bab",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x11467]",
+        "resolved_import": "KERNEL32.dll!UnhandledExceptionFilter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000201c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1105e]",
+        "resolved_import": "KERNEL32.dll!RtlUnwindEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002136",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10f4c]",
+        "resolved_import": "KERNEL32.dll!InterlockedFlushSList",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002464",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10c26]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800024eb",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10ba7]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800025e3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10ac7]",
+        "resolved_import": "KERNEL32.dll!DeleteCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800027b4",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1084e]",
+        "resolved_import": "KERNEL32.dll!RtlLookupFunctionEntry",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002a4c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1062e]",
+        "resolved_import": "KERNEL32.dll!RtlUnwindEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002c65",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10485]",
+        "resolved_import": "KERNEL32.dll!LoadLibraryExW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002c73",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10417]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002c9d",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1044d]",
+        "resolved_import": "KERNEL32.dll!LoadLibraryExW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002d0b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x103cf]",
+        "resolved_import": "KERNEL32.dll!FreeLibrary",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002d17",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x103cb]",
+        "resolved_import": "KERNEL32.dll!GetProcAddress",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002d6e",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x1034b]",
+        "resolved_import": "KERNEL32.dll!TlsAlloc",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002db7",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x1031a]",
+        "resolved_import": "KERNEL32.dll!TlsFree",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002dff",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x102c2]",
+        "resolved_import": "KERNEL32.dll!TlsGetValue",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002e48",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x10282]",
+        "resolved_import": "KERNEL32.dll!TlsSetValue",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180002ea7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x1020b]",
+        "resolved_import": "KERNEL32.dll!InitializeCriticalSectionAndSpinCount",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800038a7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xf84b]",
+        "resolved_import": "KERNEL32.dll!EncodePointer",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180004031",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xf0c9]",
+        "resolved_import": "KERNEL32.dll!RaiseException",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800046b8",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xea4a]",
+        "resolved_import": "KERNEL32.dll!RtlPcToFileHeader",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800046f9",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xea01]",
+        "resolved_import": "KERNEL32.dll!RaiseException",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180004b1b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xe5ef]",
+        "resolved_import": "KERNEL32.dll!ReadFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180004c3f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xe44b]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180004c74",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xe41e]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180005ecb",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd1a7]",
+        "resolved_import": "KERNEL32.dll!GetModuleHandleW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180005f94",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd08e]",
+        "resolved_import": "KERNEL32.dll!GetCurrentProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180005f9f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd08b]",
+        "resolved_import": "KERNEL32.dll!TerminateProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180005fae",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd164]",
+        "resolved_import": "KERNEL32.dll!ExitProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180005fdd",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd13d]",
+        "resolved_import": "KERNEL32.dll!GetModuleHandleExW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180005ff3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd0ef]",
+        "resolved_import": "KERNEL32.dll!GetProcAddress",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000600f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xd0cb]",
+        "resolved_import": "KERNEL32.dll!FreeLibrary",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006a76",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc5bc]",
+        "resolved_import": "KERNEL32.dll!IsProcessorFeaturePresent",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006b90",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc4fa]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006bc5",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc4cd]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006bfc",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc48e]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006c0c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc486]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006cb7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc343]",
+        "resolved_import": "KERNEL32.dll!RtlCaptureContext",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006ccf",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc333]",
+        "resolved_import": "KERNEL32.dll!RtlLookupFunctionEntry",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006d0a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc300]",
+        "resolved_import": "KERNEL32.dll!RtlVirtualUnwind",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006d43",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc31f]",
+        "resolved_import": "KERNEL32.dll!IsDebuggerPresent",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006d4d",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc2cd]",
+        "resolved_import": "KERNEL32.dll!SetUnhandledExceptionFilter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006d58",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc2ba]",
+        "resolved_import": "KERNEL32.dll!UnhandledExceptionFilter",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006f21",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc111]",
+        "resolved_import": "KERNEL32.dll!IsProcessorFeaturePresent",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006f46",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xc0dc]",
+        "resolved_import": "KERNEL32.dll!GetCurrentProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180006f58",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0xc0d1]",
+        "resolved_import": "KERNEL32.dll!TerminateProcess",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800070ed",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbfbd]",
+        "resolved_import": "KERNEL32.dll!DeleteCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000711c",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0xbf7d]",
+        "resolved_import": "KERNEL32.dll!EnterCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180007128",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0xbf79]",
+        "resolved_import": "KERNEL32.dll!LeaveCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000744a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbce0]",
+        "resolved_import": "KERNEL32.dll!SetFilePointerEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180007454",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbc36]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800074e3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbc47]",
+        "resolved_import": "KERNEL32.dll!SetFilePointerEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800074ed",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbb9d]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000751b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbc0f]",
+        "resolved_import": "KERNEL32.dll!SetFilePointerEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000753e",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xbbec]",
+        "resolved_import": "KERNEL32.dll!SetFilePointerEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800079db",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb6af]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800079fa",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb698]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180007a68",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb62a]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180007be5",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb4a5]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180007c18",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb47a]",
+        "resolved_import": "KERNEL32.dll!SetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180007e83",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb287]",
+        "resolved_import": "KERNEL32.dll!ReadFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180008062",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xb0a8]",
+        "resolved_import": "KERNEL32.dll!ReadFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000825f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xae2b]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000864b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xaae7]",
+        "resolved_import": "KERNEL32.dll!GetConsoleMode",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180008680",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xaaba]",
+        "resolved_import": "KERNEL32.dll!ReadConsoleW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000868a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xaa00]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800086d9",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xaa31]",
+        "resolved_import": "KERNEL32.dll!ReadFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800087db",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xa8af]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180008878",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xa7f2]",
+        "resolved_import": "KERNEL32.dll!GetStartupInfoW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800088e3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xa867]",
+        "resolved_import": "KERNEL32.dll!GetFileType",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800089c1",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xa781]",
+        "resolved_import": "KERNEL32.dll!GetStdHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800089d7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xa773]",
+        "resolved_import": "KERNEL32.dll!GetFileType",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009106",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0xa04c]",
+        "resolved_import": "KERNEL32.dll!HeapFree",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009110",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x9f7a]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000938a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x9dd0]",
+        "resolved_import": "KERNEL32.dll!CloseHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009394",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x9cf6]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x1800097f7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x9973]",
+        "resolved_import": "KERNEL32.dll!GetConsoleOutputCP",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009ad4",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x968e]",
+        "resolved_import": "KERNEL32.dll!WriteFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009b1a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x9648]",
+        "resolved_import": "KERNEL32.dll!WriteFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009bd9",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x94b1]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009cc4",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x949e]",
+        "resolved_import": "KERNEL32.dll!WriteFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009ce0",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x93aa]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009de0",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x9382]",
+        "resolved_import": "KERNEL32.dll!WriteFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009dfc",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x928e]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009f48",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x921a]",
+        "resolved_import": "KERNEL32.dll!WriteFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x180009f6d",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x911d]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a27a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8eb8]",
+        "resolved_import": "KERNEL32.dll!GetConsoleMode",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a30c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8d7e]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a3d2",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8d90]",
+        "resolved_import": "KERNEL32.dll!WriteFile",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a3dc",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8cae]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a5d3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8b57]",
+        "resolved_import": "KERNEL32.dll!SetFilePointerEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a5eb",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8b87]",
+        "resolved_import": "KERNEL32.dll!GetFileSizeEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000a9de",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x879c]",
+        "resolved_import": "KERNEL32.dll!HeapAlloc",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000aa5a",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x863f]",
+        "resolved_import": "KERNEL32.dll!EnterCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000aa83",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8627]",
+        "resolved_import": "KERNEL32.dll!DeleteCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000aaae",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x85f3]",
+        "resolved_import": "KERNEL32.dll!LeaveCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000ab75",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8605]",
+        "resolved_import": "KERNEL32.dll!HeapAlloc",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000ac82",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8408]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000ae2a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x8260]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b439",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x7d51]",
+        "resolved_import": "KERNEL32.dll!FindFirstFileExW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b56f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x7c23]",
+        "resolved_import": "KERNEL32.dll!FindNextFileW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b5af",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x7bd3]",
+        "resolved_import": "KERNEL32.dll!FindClose",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b5db",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x7ba7]",
+        "resolved_import": "KERNEL32.dll!FindClose",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b75e",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x792c]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b813",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x790f]",
+        "resolved_import": "KERNEL32.dll!GetModuleFileNameW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000b81d",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x786d]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000baf6",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x76b4]",
+        "resolved_import": "KERNEL32.dll!GetOEMCP",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000bb0d",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x7695]",
+        "resolved_import": "KERNEL32.dll!GetACP",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000bc34",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x757e]",
+        "resolved_import": "KERNEL32.dll!GetCPInfo",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c1fb",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6f9f]",
+        "resolved_import": "KERNEL32.dll!IsValidCodePage",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c23f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6f73]",
+        "resolved_import": "KERNEL32.dll!GetCPInfo",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c4d4",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6ce6]",
+        "resolved_import": "KERNEL32.dll!GetCommandLineA",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c4e1",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6ce1]",
+        "resolved_import": "KERNEL32.dll!GetCommandLineW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c549",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x6c80]",
+        "resolved_import": "KERNEL32.dll!MultiByteToWideChar",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c65f",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x6b72]",
+        "resolved_import": "KERNEL32.dll!WideCharToMultiByte",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c681",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6b59]",
+        "resolved_import": "KERNEL32.dll!GetEnvironmentStringsW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c6f6",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6aec]",
+        "resolved_import": "KERNEL32.dll!FreeEnvironmentStringsW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c752",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6a90]",
+        "resolved_import": "KERNEL32.dll!FreeEnvironmentStringsW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c895",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6855]",
+        "resolved_import": "KERNEL32.dll!LoadLibraryExW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c8a7",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x67e3]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c8e9",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6801]",
+        "resolved_import": "KERNEL32.dll!LoadLibraryExW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c945",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x68cd]",
+        "resolved_import": "KERNEL32.dll!VirtualProtect",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c976",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x689c]",
+        "resolved_import": "KERNEL32.dll!VirtualProtect",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c9ba",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6720]",
+        "resolved_import": "KERNEL32.dll!FreeLibrary",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000c9c6",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x671c]",
+        "resolved_import": "KERNEL32.dll!GetProcAddress",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000ca84",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x6765]",
+        "resolved_import": "KERNEL32.dll!FlsAlloc",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000ca8c",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x6775]",
+        "resolved_import": "KERNEL32.dll!FlsFree",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000ca94",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x675d]",
+        "resolved_import": "KERNEL32.dll!FlsGetValue",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000caa8",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x6751]",
+        "resolved_import": "KERNEL32.dll!FlsSetValue",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000cab0",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x6759]",
+        "resolved_import": "KERNEL32.dll!InitializeCriticalSectionEx",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000cb8f",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x668b]",
+        "resolved_import": "KERNEL32.dll!LCMapStringW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000cc30",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x65e2]",
+        "resolved_import": "KERNEL32.dll!VirtualProtect",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000cca3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x6437]",
+        "resolved_import": "KERNEL32.dll!FreeLibrary",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000cce4",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x653e]",
+        "resolved_import": "KERNEL32.dll!GetProcessHeap",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000d8b3",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x57f7]",
+        "resolved_import": "KERNEL32.dll!DeleteCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000d9c5",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x56e5]",
+        "resolved_import": "KERNEL32.dll!DeleteCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000dab4",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x55e5]",
+        "resolved_import": "KERNEL32.dll!EnterCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000db37",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x56f3]",
+        "resolved_import": "KERNEL32.dll!SetStdHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000db9c",
+        "mnemonic": "jmp",
+        "op_str": "qword ptr [rip + 0x5505]",
+        "resolved_import": "KERNEL32.dll!LeaveCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000dc49",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x5451]",
+        "resolved_import": "KERNEL32.dll!EnterCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000dc58",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x544a]",
+        "resolved_import": "KERNEL32.dll!LeaveCriticalSection",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000dd5e",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x54cc]",
+        "resolved_import": "KERNEL32.dll!SetStdHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000e60a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x4c28]",
+        "resolved_import": "KERNEL32.dll!GetStringTypeW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f1ee",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x404c]",
+        "resolved_import": "KERNEL32.dll!CreateFileW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f24c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3fee]",
+        "resolved_import": "KERNEL32.dll!CreateFileW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f27c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3e0e]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f294",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3eb6]",
+        "resolved_import": "KERNEL32.dll!GetFileType",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f29e",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3dec]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f2d1",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3e89]",
+        "resolved_import": "KERNEL32.dll!CloseHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f437",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3d23]",
+        "resolved_import": "KERNEL32.dll!CloseHandle",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f46c",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3dce]",
+        "resolved_import": "KERNEL32.dll!CreateFileW",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f47b",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3c0f]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f53a",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3d08]",
+        "resolved_import": "KERNEL32.dll!FlushFileBuffers",
+        "target_section": ".rdata"
+      },
+      {
+        "insn_va": "0x18000f546",
+        "mnemonic": "call",
+        "op_str": "qword ptr [rip + 0x3b44]",
+        "resolved_import": "KERNEL32.dll!GetLastError",
+        "target_section": ".rdata"
+      }
+    ],
+    "behavior_categories": {
+      "process": [
+        [
+          "KERNEL32.dll!TerminateProcess",
+          3
+        ]
+      ],
+      "dll_loading": [
+        [
+          "KERNEL32.dll!FreeLibrary",
+          4
+        ],
+        [
+          "KERNEL32.dll!LoadLibraryExW",
+          4
+        ],
+        [
+          "KERNEL32.dll!GetProcAddress",
+          3
+        ]
+      ],
+      "filesystem": [
+        [
+          "KERNEL32.dll!WriteFile",
+          6
+        ],
+        [
+          "KERNEL32.dll!SetFilePointerEx",
+          5
+        ],
+        [
+          "KERNEL32.dll!ReadFile",
+          4
+        ],
+        [
+          "KERNEL32.dll!CreateFileW",
+          3
+        ],
+        [
+          "KERNEL32.dll!FindFirstFileExW",
+          1
+        ],
+        [
+          "KERNEL32.dll!FindNextFileW",
+          1
+        ]
+      ],
+      "memory_injection": [
+        [
+          "KERNEL32.dll!VirtualProtect",
+          3
+        ]
+      ]
+    }
+  }
+}

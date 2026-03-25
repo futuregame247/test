@@ -1,0 +1,274 @@
+File: payload_update.bin
+EntryPoint VA: 0x1800440f4
+
+== Top resolved imported calls ==
+   3  KERNEL32.dll!GetModuleHandleW
+   3  KERNEL32.dll!CloseHandle
+   2  KERNEL32.dll!GetCurrentProcessId
+   2  KERNEL32.dll!LocalFree
+   2  KERNEL32.dll!GetTickCount
+   1  KERNEL32.dll!GetModuleFileNameW
+   1  KERNEL32.dll!GetSystemDirectoryW
+   1  KERNEL32.dll!CreateEventA
+   1  KERNEL32.dll!GetLastError
+   1  KERNEL32.dll!GetCommandLineW
+   1  SHELL32.dll!CommandLineToArgvW
+   1  KERNEL32.dll!GetProcAddress
+   1  KERNEL32.dll!OpenEventA
+   1  KERNEL32.dll!WaitForSingleObject
+   1  KERNEL32.dll!OutputDebugStringA
+
+== Import call sites (first 250) ==
+0x180001349: call qword ptr [rip + 0x6cdf1]      -> KERNEL32.dll!GetModuleFileNameW
+0x180001382: call qword ptr [rip + 0x6cdc8]      -> KERNEL32.dll!GetSystemDirectoryW
+0x1800013c0: call qword ptr [rip + 0x6cdb2]      -> KERNEL32.dll!GetCurrentProcessId
+0x1800013f8: call qword ptr [rip + 0x6cd92]      -> KERNEL32.dll!CreateEventA
+0x18000140e: call qword ptr [rip + 0x6cd44]      -> KERNEL32.dll!GetLastError
+0x180001440: call qword ptr [rip + 0x6cd3a]      -> KERNEL32.dll!GetModuleHandleW
+0x18000146a: call qword ptr [rip + 0x6cd10]      -> KERNEL32.dll!GetModuleHandleW
+0x180001486: call qword ptr [rip + 0x6ccac]      -> KERNEL32.dll!GetCommandLineW
+0x180001494: call qword ptr [rip + 0x6d056]      -> SHELL32.dll!CommandLineToArgvW
+0x180001504: call qword ptr [rip + 0x6cc66]      -> KERNEL32.dll!LocalFree
+0x18000152b: call qword ptr [rip + 0x6cc4f]      -> KERNEL32.dll!GetModuleHandleW
+0x180001544: call qword ptr [rip + 0x6cc1e]      -> KERNEL32.dll!GetProcAddress
+0x18000158a: call qword ptr [rip + 0x6cbe0]      -> KERNEL32.dll!LocalFree
+0x18000159e: call qword ptr [rip + 0x6cb8c]      -> KERNEL32.dll!OpenEventA
+0x1800015b8: call qword ptr [rip + 0x6cb8a]      -> KERNEL32.dll!WaitForSingleObject
+0x1800015c1: call qword ptr [rip + 0x6cb99]      -> KERNEL32.dll!CloseHandle
+0x1800015e7: call qword ptr [rip + 0x6cb73]      -> KERNEL32.dll!CloseHandle
+0x180001635: call qword ptr [rip + 0x6cb25]      -> KERNEL32.dll!CloseHandle
+0x1800016dc: call qword ptr [rip + 0x6ca96]      -> KERNEL32.dll!GetCurrentProcessId
+0x18000184a: call qword ptr [rip + 0x6c948]      -> KERNEL32.dll!OutputDebugStringA
+0x1800020ff: call qword ptr [rip + 0x6c09b]      -> KERNEL32.dll!GetTickCount
+0x180002112: call qword ptr [rip + 0x6c088]      -> KERNEL32.dll!GetTickCount
+
+== String reference sites (keyword-filtered, first 300) ==
+0x1800013c6: lea r9, [rip + 0x820f3]                 ; str@0x1800834c0 = Global\Vale_SteamIPC_Class%u
+0x18000153a: lea rdx, [rip + 0x81f2f]                ; str@0x180083470 = LdrLoadDll
+0x180001590: lea r8, [rip + 0x81f09]                 ; str@0x1800834a0 = Global\Valve_SteamIPC_Class
+0x180001bbf: lea rcx, [rip + 0x8195a]                ; str@0x180083520 = HTTP
+0x18000211a: lea rcx, [rip + 0x818c7]                ; str@0x1800839e8 = HTTP
+0x180002325: lea rcx, [rip + 0x81a14]                ; str@0x180083d40 = HTTP
+0x1800024d5: lea rcx, [rip + 0x81a54]                ; str@0x180083f30 = HTTP
+
+== Entry-point neighborhood disassembly ==
+0x180001000: lea rax, [rip + 0x9f821]
+0x180001007: ret 
+0x180001008: int3 
+0x180001009: int3 
+0x18000100a: int3 
+0x18000100b: int3 
+0x18000100c: int3 
+0x18000100d: int3 
+0x18000100e: int3 
+0x18000100f: int3 
+0x180001010: mov qword ptr [rsp + 0x20], r9
+0x180001015: push rbx
+0x180001016: push rbp
+0x180001017: push rsi
+0x180001018: push rdi
+0x180001019: push r14
+0x18000101b: sub rsp, 0x40
+0x18000101f: mov rbp, r9
+0x180001022: lea r14, [rsp + 0x90]
+0x18000102a: mov rsi, r8
+0x18000102d: mov rdi, rdx
+0x180001030: mov rbx, rcx
+0x180001033: call 0x180001000
+0x180001038: mov qword ptr [rsp + 0x30], r14
+0x18000103d: mov r9, rsi
+0x180001040: mov qword ptr [rsp + 0x28], 0
+0x180001049: mov r8, rdi
+0x18000104c: mov rdx, rbx
+0x18000104f: mov qword ptr [rsp + 0x20], rbp
+0x180001054: mov rcx, qword ptr [rax]
+0x180001057: call 0x18004d140
+0x18000105c: test eax, eax
+0x18000105e: mov ecx, 0xffffffff
+0x180001063: cmovs eax, ecx
+0x180001066: add rsp, 0x40
+0x18000106a: pop r14
+0x18000106c: pop rdi
+0x18000106d: pop rsi
+0x18000106e: pop rbp
+0x18000106f: pop rbx
+0x180001070: ret 
+0x180001071: int3 
+0x180001072: int3 
+0x180001073: int3 
+0x180001074: int3 
+0x180001075: int3 
+0x180001076: int3 
+0x180001077: int3 
+0x180001078: int3 
+0x180001079: int3 
+0x18000107a: int3 
+0x18000107b: int3 
+0x18000107c: int3 
+0x18000107d: int3 
+0x18000107e: int3 
+0x18000107f: int3 
+0x180001080: mov qword ptr [rsp + 8], rcx
+0x180001085: mov qword ptr [rsp + 0x10], rdx
+0x18000108a: mov qword ptr [rsp + 0x18], r8
+0x18000108f: mov qword ptr [rsp + 0x20], r9
+0x180001094: push rbx
+0x180001095: push rdi
+0x180001096: sub rsp, 0x48
+0x18000109a: lea rbx, [rcx*8]
+0x1800010a2: mov eax, 2
+0x1800010a7: lea rcx, [rbx + 1]
+0x1800010ab: mul rcx
+0x1800010ae: mov rcx, 0xffffffffffffffff
+0x1800010b5: lea rdi, [rsp + 0x68]
+0x1800010ba: cmovb rax, rcx
+0x1800010be: mov rcx, rax
+0x1800010c1: call 0x18004dcb0
+0x1800010c6: mov r8, rax
+0x1800010c9: test rax, rax
+0x1800010cc: jne 0x1800010d5
+0x1800010ce: add rsp, 0x48
+0x1800010d2: pop rdi
+0x1800010d3: pop rbx
+0x1800010d4: ret 
+0x1800010d5: mov qword ptr [rsp + 0x38], rsi
+0x1800010da: xor esi, esi
+0x1800010dc: mov r10d, esi
+0x1800010df: cmp qword ptr [rsp + 0x60], rsi
+0x1800010e4: jbe 0x180001209
+0x1800010ea: mov qword ptr [rsp + 0x40], rbp
+0x1800010ef: lea r11, [rdi - 8]
+0x1800010f3: mov qword ptr [rsp + 0x30], r14
+0x1800010f8: lea r9, [rax + 4]
+0x1800010fc: mov qword ptr [rsp + 0x28], r15
+0x180001101: movabs rbp, 0xaaaaaaaaaaaaaaaa
+0x18000110b: movabs r15, 0xf0f0f0f0f0f0f0f0
+0x180001115: mov edi, 0xff
+0x18000111a: movabs r14, 0xcccccccccccccccc
+0x180001124: nop dword ptr [rax]
+0x180001128: nop dword ptr [rax + rax]
+0x180001130: mov rax, qword ptr [r11 + 8]
+0x180001134: lea r11, [r11 + 8]
+0x180001138: mov rcx, rax
+0x18000113b: lea r9, [r9 + 0x10]
+0x18000113f: shr rcx, 1
+0x180001142: inc r10
+0x180001145: lea rdx, [rax + rax]
+0x180001149: xor rdx, rcx
+0x18000114c: and rdx, rbp
+0x18000114f: xor rdx, rcx
+0x180001152: mov rax, rdx
+0x180001155: shr rax, 2
+0x180001159: lea rdx, [rdx*4]
+0x180001161: xor rdx, rax
+0x180001164: and rdx, r14
+0x180001167: xor rdx, rax
+0x18000116a: mov rax, rdx
+0x18000116d: shl rdx, 4
+0x180001171: shr rax, 4
+0x180001175: xor rdx, rax
+0x180001178: and rdx, r15
+0x18000117b: xor rdx, rax
+0x18000117e: bswap rdx
+0x180001181: movzx eax, dx
+0x180001184: and ax, di
+0x180001187: mov word ptr [r9 - 0x14], ax
+0x18000118c: mov rax, rdx
+0x18000118f: shr rax, 8
+0x180001193: and ax, di
+0x180001196: mov word ptr [r9 - 0x12], ax
+0x18000119b: mov rax, rdx
+0x18000119e: shr rax, 0x10
+0x1800011a2: and ax, di
+0x1800011a5: mov word ptr [r9 - 0x10], ax
+0x1800011aa: mov rax, rdx
+0x1800011ad: shr rax, 0x18
+0x1800011b1: and ax, di
+0x1800011b4: mov word ptr [r9 - 0xe], ax
+0x1800011b9: mov rax, rdx
+0x1800011bc: shr rax, 0x20
+0x1800011c0: and ax, di
+0x1800011c3: mov word ptr [r9 - 0xc], ax
+0x1800011c8: mov rax, rdx
+0x1800011cb: shr rax, 0x28
+0x1800011cf: and ax, di
+0x1800011d2: mov word ptr [r9 - 0xa], ax
+0x1800011d7: mov rax, rdx
+0x1800011da: shr rax, 0x30
+0x1800011de: and ax, di
+0x1800011e1: shr rdx, 0x38
+0x1800011e5: mov word ptr [r9 - 8], ax
+0x1800011ea: mov word ptr [r9 - 6], dx
+0x1800011ef: cmp r10, qword ptr [rsp + 0x60]
+0x1800011f4: jb 0x180001130
+0x1800011fa: mov r15, qword ptr [rsp + 0x28]
+0x1800011ff: mov r14, qword ptr [rsp + 0x30]
+0x180001204: mov rbp, qword ptr [rsp + 0x40]
+0x180001209: mov word ptr [r8 + rbx*2], si
+0x18000120e: mov rax, r8
+0x180001211: mov rsi, qword ptr [rsp + 0x38]
+0x180001216: add rsp, 0x48
+0x18000121a: pop rdi
+0x18000121b: pop rbx
+0x18000121c: ret 
+0x18000121d: int3 
+0x18000121e: int3 
+0x18000121f: int3 
+0x180001220: push rbx
+0x180001222: push rdi
+0x180001223: sub rsp, 0x248
+0x18000122a: mov rax, qword ptr [rip + 0x8b10f]
+0x180001231: xor rax, rsp
+0x180001234: mov qword ptr [rsp + 0x230], rax
+0x18000123c: mov rdi, r8
+0x18000123f: call qword ptr [rip + 0x9f57b]
+0x180001245: mov ebx, eax
+0x180001247: test eax, eax
+0x180001249: js 0x1800012fd
+0x18000124f: test rdi, rdi
+0x180001252: je 0x1800012fd
+0x180001258: cmp qword ptr [rdi + 8], 0
+0x18000125d: je 0x1800012fd
+0x180001263: xor edx, edx
+0x180001265: lea rcx, [rsp + 0x20]
+0x18000126a: mov r8d, 0x208
+0x180001270: call 0x18006c580
+0x180001275: movzx r9d, word ptr [rdi]
+0x180001279: lea rcx, [rsp + 0x20]
+0x18000127e: mov r8, qword ptr [rdi + 8]
+0x180001282: mov edx, 0x104
+0x180001287: shr r9, 1
+0x18000128a: call 0x18004dcc0
+0x18000128f: lea rcx, [rsp + 0x20]
+0x180001294: call 0x18004db60
+0x180001299: movabs rdx, 0xc64e86ce16168676
+0x1800012a3: mov ecx, 2
+0x1800012a8: movabs r8, 0x2636a64e74263636
+0x1800012b2: call 0x180001080
+0x1800012b7: mov rdx, rax
+0x1800012ba: lea rcx, [rsp + 0x20]
+0x1800012bf: call 0x180045708
+0x1800012c4: test rax, rax
+0x1800012c7: je 0x1800012fb
+0x1800012c9: cmp dword ptr [rip + 0x8bd00], 0
+0x1800012d0: je 0x1800012de
+0x1800012d2: mov dword ptr [rip + 0x8bcf4], 0
+0x1800012dc: jmp 0x1800012fb
+0x1800012de: mov rcx, qword ptr [rip + 0x9f4e3]
+0x1800012e5: call 0x18000ecc0
+0x1800012ea: mov rcx, qword ptr [rip + 0x9f4d7]
+0x1800012f1: call 0x18000ed80
+0x1800012f6: call 0x1800039b0
+0x1800012fb: mov eax, ebx
+0x1800012fd: mov rcx, qword ptr [rsp + 0x230]
+0x180001305: xor rcx, rsp
+0x180001308: call 0x180043b20
+0x18000130d: add rsp, 0x248
+0x180001314: pop rdi
+0x180001315: pop rbx
+0x180001316: ret 
+0x180001317: int3 
+0x180001318: int3 
+0x180001319: int3 
+0x18000131a: int3 
+0x18000131b: int3 
